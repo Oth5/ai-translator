@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>مترجم الشات جي بي تي</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="header">
+        <h1>مترجم الذكاء الاصطناعي</h1>
+        <p>اكتب أي نص ، ويترجم لك ✨</p>
+      </header>
+
+      <main class="card">
+        <div class="columns">
+          <!-- حقل الإدخال -->
+          <div class="column">
+            <div class="label-row">
+              <span class="label-title">النص الأصلي</span>
+              <span class="label-sub">أي لغة</span>
+            </div>
+            <textarea
+              id="inputText"
+              placeholder="اكتب النص هنا..."
+            ></textarea>
+          </div>
+
+          <!-- حقل النتيجة -->
+          <div class="column">
+            <div class="label-row">
+              <span class="label-title">الترجمة للعربية</span>
+              <span class="label-sub">نص مترجم</span>
+            </div>
+            <div id="result" class="result-box">
+              الترجمة ستظهر هنا...
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="translateBtn">ترجمة الآن</button>
+          <button id="clearBtn" class="secondary">مسح</button>
+        </div>
+
+        <div id="status" class="status"></div>
+      </main>
+
+      <footer class="footer">
+        <span>تم اعداده من قبل:عثمان الزامل و ماجد الدعجاني
+        </span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
